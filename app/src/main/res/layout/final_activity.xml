@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCEA66">
+
+    <TextView
+        android:id="@+id/txtwinner"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/txtwinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
+
+    <Button
+        android:id="@+id/btnFinalRestart"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtwinner"
+        android:layout_marginTop="54dp"
+        android:layout_toStartOf="@+id/imgResult"
+        android:background="#D2DE73"
+        android:textSize="18sp"
+        tools:text="restart" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/btnFinalRestart"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/imgResult"
+        android:background="#D2DE73"
+        android:text="Home"
+        android:textSize="18sp" />
+</RelativeLayout>
